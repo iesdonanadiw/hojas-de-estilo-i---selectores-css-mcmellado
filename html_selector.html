@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html selector</title>
+</head>
+
+<body>
+    <style>
+        .primero {
+            color: red;
+        }
+
+        p.primero {
+            color: green;
+        }
+
+        section.primero {}
+
+        #paco { 
+            color:aqua 
+        }
+
+        p#segundo { 
+            color: yellow;
+        }
+
+        .primero span {
+            color: pink;
+        }
+
+        .primero>span {
+            color:blueviolet;
+        }
+
+        span .primero {
+            color:brown;
+        }
+
+        .primero.parte {
+            color:hotpink;
+        }
+    </style>
+
+    <div class="primero">
+        <header>
+            <h1 class="primero">Selectores en CSS</h1> 
+            <p> Prueba de p.primero </p>
+        </header>
+        <main>
+            <p id="paco"> Prueba de #paco </p>
+                <span class="negrita">consectetur</span> <!-- *5 -->
+                sed, convallis at tellus.
+            </p>
+        </main>
+        <p class="segundo"> prueba de p#segundo</p>
+        <span>
+            <p class="primero"> Prueba de .primero span </p>
+        </span>
+        <div>
+            <p> Prueba .primero.parte</p>
+        </div>
+
+        <span> 
+            <p class="primero"> Prueba de span. primero</p>
+        </span>
+
+        <div class="primero">
+            <span> Prueba de .primero>span </span>
+        </div>
+
+        <p class="primero parte"> Prueba de .primero.parte </p>
+    </div>
+
+
+</body>
+
+</html>
